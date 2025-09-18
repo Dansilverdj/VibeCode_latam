@@ -57,6 +57,31 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        // Vibe Coding Custom Colors
+        electric: {
+          DEFAULT: "hsl(var(--electric-blue))",
+          foreground: "hsl(var(--primary-foreground))",
+        },
+        neon: {
+          DEFAULT: "hsl(var(--neon-green))",
+          foreground: "hsl(var(--success-foreground))",
+        },
+        cyber: {
+          DEFAULT: "hsl(var(--cyber-purple))",
+          foreground: "hsl(var(--accent-foreground))",
+        },
+        tech: {
+          DEFAULT: "hsl(var(--tech-orange))",
+          foreground: "hsl(var(--warning-foreground))",
+        },
+        success: {
+          DEFAULT: "hsl(var(--success))",
+          foreground: "hsl(var(--success-foreground))",
+        },
+        warning: {
+          DEFAULT: "hsl(var(--warning))",
+          foreground: "hsl(var(--warning-foreground))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
