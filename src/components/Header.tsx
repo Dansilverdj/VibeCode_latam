@@ -1,8 +1,11 @@
 import { useState } from 'react';
-import { Menu, X, Code2 } from 'lucide-react';
+import { Menu, X, Code2, Sun, Moon } from 'lucide-react';
+import { Switch } from '@/components/ui/switch';
+import { useTheme } from '@/hooks/use-theme';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { theme, toggleTheme } = useTheme();
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -52,6 +55,17 @@ const Header = () => {
             >
               Play
             </button>
+            
+            {/* Theme Toggle */}
+            <div className="flex items-center space-x-2 ml-4 pl-4 border-l border-border">
+              <Sun className="h-4 w-4 text-muted-foreground" />
+              <Switch
+                checked={theme === 'dark'}
+                onCheckedChange={toggleTheme}
+                className="data-[state=checked]:bg-electric"
+              />
+              <Moon className="h-4 w-4 text-muted-foreground" />
+            </div>
           </div>
 
           {/* Mobile Menu Button */}
@@ -91,6 +105,20 @@ const Header = () => {
               >
                 Play
               </button>
+              
+              {/* Mobile Theme Toggle */}
+              <div className="flex items-center justify-between pt-4 border-t border-border">
+                <span className="text-foreground font-medium">Dark Mode</span>
+                <div className="flex items-center space-x-2">
+                  <Sun className="h-4 w-4 text-muted-foreground" />
+                  <Switch
+                    checked={theme === 'dark'}
+                    onCheckedChange={toggleTheme}
+                    className="data-[state=checked]:bg-electric"
+                  />
+                  <Moon className="h-4 w-4 text-muted-foreground" />
+                </div>
+              </div>
             </div>
           </div>
         )}
