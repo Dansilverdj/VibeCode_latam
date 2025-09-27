@@ -1,4 +1,4 @@
-import { Code2, Github, Twitter, Linkedin, Mail, Heart } from 'lucide-react';
+import { Code2, Github, Twitter, Linkedin, Mail, Heart, MessageCircle } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -21,6 +21,15 @@ const Footer = () => {
             
             {/* Social Links */}
             <div className="flex space-x-4">
+              <a 
+                href="https://discord.gg/u6hEfHvW" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 rounded-lg bg-card border border-border hover:border-electric/50 transition-colors hover-lift"
+                aria-label="Discord - Únete a nuestra comunidad"
+              >
+                <MessageCircle className="h-5 w-5 text-muted-foreground hover:text-electric transition-colors" />
+              </a>
               <a 
                 href="#" 
                 className="p-2 rounded-lg bg-card border border-border hover:border-electric/50 transition-colors hover-lift"
@@ -89,8 +98,8 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="#" className="text-muted-foreground hover:text-electric transition-colors">
-                  Comunidad
+                <a href="https://discord.gg/u6hEfHvW" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-electric transition-colors">
+                  Comunidad Discord
                 </a>
               </li>
               <li>

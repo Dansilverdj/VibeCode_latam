@@ -1,4 +1,4 @@
-import { ArrowRight, Play, Sparkles } from 'lucide-react';
+import { ArrowRight, Play, Sparkles, MessageCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import heroImage from '@/assets/hero-coding.jpg';
 
@@ -55,7 +55,7 @@ const Hero = () => {
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
             <Button
               onClick={() => scrollToSection('courses')}
               size="lg"
@@ -74,6 +74,33 @@ const Hero = () => {
               <Play className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
               Probar Demo Interactivo
             </Button>
+          </div>
+
+          {/* Discord Community Call-to-Action */}
+          <div className="bg-secondary/30 backdrop-blur-sm rounded-2xl p-6 border border-border mb-8 max-w-2xl mx-auto">
+            <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+              <div className="text-center sm:text-left">
+                <h3 className="text-lg font-semibold mb-2">¡Únete a nuestra comunidad!</h3>
+                <p className="text-muted-foreground text-sm">
+                  Conecta con otros desarrolladores latinos, comparte proyectos y aprende juntos
+                </p>
+              </div>
+              <Button
+                asChild
+                variant="outline"
+                className="border-neon/50 text-neon hover:bg-neon/10 hover-lift whitespace-nowrap"
+              >
+                <a 
+                  href="https://discord.gg/u6hEfHvW" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-center"
+                >
+                  <MessageCircle className="mr-2 h-4 w-4" />
+                  Unirse a Discord
+                </a>
+              </Button>
+            </div>
           </div>
 
           {/* Stats */}
