@@ -28,20 +28,30 @@ const Hero = () => {
           {/* Badge */}
           <div className="inline-flex items-center space-x-2 bg-secondary/50 backdrop-blur-sm border border-border rounded-full px-4 py-2 mb-8">
             <Sparkles className="h-4 w-4 text-electric" />
-            <span className="text-sm text-muted-foreground">Code with style, learn with passion</span>
+            <span className="text-sm text-muted-foreground">Programa con estilo, aprende con pasión</span>
+          </div>
+
+          {/* Latin American Flags */}
+          <div className="flex justify-center items-center space-x-3 mb-6">
+            <span className="text-2xl">🇲🇽</span>
+            <span className="text-2xl">🇨🇴</span>
+            <span className="text-2xl">🇨🇱</span>
+            <span className="text-2xl">🇵🇪</span>
+            <span className="text-2xl">🇦🇷</span>
+            <span className="text-sm text-muted-foreground ml-4">Unidos por la tecnología</span>
           </div>
 
           {/* Main Heading */}
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            Welcome to{' '}
+            Bienvenido a{' '}
             <span className="bg-gradient-to-r from-electric via-cyber to-neon bg-clip-text text-transparent">
-              Vibe Coding
+              Vibe Coding LATAM
             </span>
           </h1>
 
           {/* Subtitle */}
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
-            Master modern web development with interactive courses, hands-on projects, and a community that celebrates creativity and innovation in code.
+            Domina el desarrollo web moderno con cursos interactivos, proyectos prácticos, y una comunidad que celebra la creatividad e innovación en código.
           </p>
 
           {/* CTA Buttons */}
@@ -51,7 +61,7 @@ const Hero = () => {
               size="lg"
               className="bg-gradient-to-r from-electric to-cyber hover:from-electric/90 hover:to-cyber/90 text-white px-8 py-3 rounded-full hover-lift glow-blue group"
             >
-              Start Learning
+              Comenzar a Aprender
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
             
@@ -62,7 +72,7 @@ const Hero = () => {
               className="border-electric/50 text-electric hover:bg-electric/10 px-8 py-3 rounded-full hover-lift group"
             >
               <Play className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
-              Try Interactive Demo
+              Probar Demo Interactivo
             </Button>
           </div>
 
@@ -70,15 +80,15 @@ const Hero = () => {
           <div className="grid grid-cols-3 gap-8 mt-16 max-w-2xl mx-auto">
             <div className="text-center">
               <div className="text-3xl font-bold text-electric">500+</div>
-              <div className="text-sm text-muted-foreground">Students</div>
+              <div className="text-sm text-muted-foreground">Estudiantes</div>
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold text-neon">12</div>
-              <div className="text-sm text-muted-foreground">Courses</div>
+              <div className="text-sm text-muted-foreground">Cursos</div>
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold text-cyber">95%</div>
-              <div className="text-sm text-muted-foreground">Success Rate</div>
+              <div className="text-sm text-muted-foreground">Tasa de Éxito</div>
             </div>
           </div>
         </div>

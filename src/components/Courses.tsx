@@ -8,50 +8,50 @@ import pythonCourseImage from '@/assets/course-python.jpg';
 const courses = [
   {
     id: 1,
-    title: "Web Development Fundamentals",
-    description: "Master HTML, CSS, and JavaScript to build responsive and interactive websites from scratch.",
+    title: "Fundamentos de Desarrollo Web",
+    description: "Domina HTML, CSS y JavaScript para crear sitios web responsivos e interactivos desde cero.",
     image: webCourseImage,
-    duration: "8 weeks",
+    duration: "8 semanas",
     students: "150+",
-    level: "Beginner",
+    level: "Principiante",
     color: "electric",
     highlights: [
-      "HTML5 & CSS3 Mastery",
-      "JavaScript Essentials",
-      "Responsive Design",
-      "Real-world Projects"
+      "Dominio de HTML5 y CSS3",
+      "JavaScript Esencial",
+      "Diseño Responsivo",
+      "Proyectos del Mundo Real"
     ]
   },
   {
     id: 2,
-    title: "React & Modern Frontend",
-    description: "Build dynamic user interfaces with React, hooks, and modern frontend development practices.",
+    title: "React y Frontend Moderno",
+    description: "Construye interfaces de usuario dinámicas con React, hooks y prácticas modernas de desarrollo frontend.",
     image: reactCourseImage,
-    duration: "10 weeks",
+    duration: "10 semanas",
     students: "200+",
-    level: "Intermediate",
+    level: "Intermedio",
     color: "cyber",
     highlights: [
-      "React Components & Hooks",
-      "State Management",
-      "Modern JavaScript (ES6+)",
-      "API Integration"
+      "Componentes React y Hooks",
+      "Gestión de Estado",
+      "JavaScript Moderno (ES6+)",
+      "Integración de APIs"
     ]
   },
   {
     id: 3,
-    title: "Python Programming",
-    description: "Learn Python from basics to advanced concepts including data structures and web development.",
+    title: "Programación en Python",
+    description: "Aprende Python desde lo básico hasta conceptos avanzados incluyendo estructuras de datos y desarrollo web.",
     image: pythonCourseImage,
-    duration: "12 weeks",
+    duration: "12 semanas",
     students: "180+",
-    level: "Beginner",
+    level: "Principiante", 
     color: "neon",
     highlights: [
-      "Python Fundamentals",
-      "Data Structures & Algorithms",
-      "Web Development with Flask",
-      "Automation & Scripting"
+      "Fundamentos de Python",
+      "Estructuras de Datos y Algoritmos",
+      "Desarrollo Web con Flask",
+      "Automatización y Scripting"
     ]
   }
 ];
@@ -63,10 +63,10 @@ const Courses = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Our <span className="bg-gradient-to-r from-electric to-cyber bg-clip-text text-transparent">Courses</span>
+            Nuestros <span className="bg-gradient-to-r from-electric to-cyber bg-clip-text text-transparent">Cursos</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Carefully crafted learning paths designed to take you from beginner to professional developer
+            Rutas de aprendizaje cuidadosamente diseñadas para llevarte de principiante a desarrollador profesional
           </p>
         </div>
 
@@ -115,13 +115,13 @@ const Courses = () => {
                   </div>
                   <div className="flex items-center space-x-1">
                     <Award className="h-4 w-4" />
-                    <span>Certificate</span>
+                    <span>Certificado</span>
                   </div>
                 </div>
 
                 {/* Course Highlights */}
                 <div className="space-y-2">
-                  <h4 className="font-medium text-sm">What you'll learn:</h4>
+                  <h4 className="font-medium text-sm">Lo que aprenderás:</h4>
                   <ul className="space-y-1">
                     {course.highlights.map((highlight, index) => (
                       <li key={index} className="text-sm text-muted-foreground flex items-center space-x-2">
@@ -142,7 +142,7 @@ const Courses = () => {
                       course.color === 'cyber' ? 'bg-cyber hover:bg-cyber/90' : 
                       'bg-neon hover:bg-neon/90'} text-white`}
                 >
-                  Enroll Now
+                  Inscribirse Ahora
                   <ArrowRight className="ml-2 h-4 w-4 group-hover/btn:translate-x-1 transition-transform" />
                 </Button>
               </CardContent>
@@ -153,14 +153,14 @@ const Courses = () => {
         {/* Call to Action */}
         <div className="text-center mt-16">
           <p className="text-muted-foreground mb-4">
-            Can't decide? Start with our free introductory course
+            ¿No puedes decidir? Comienza con nuestro curso introductorio gratuito
           </p>
           <Button 
             variant="outline" 
             size="lg"
             className="border-electric/50 text-electric hover:bg-electric/10 hover-lift"
           >
-            Browse All Courses
+            Explorar Todos los Cursos
           </Button>
         </div>
       </div>

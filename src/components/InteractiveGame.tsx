@@ -231,10 +231,10 @@ const InteractiveGame = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Pac-Man <span className="bg-gradient-to-r from-cyber to-electric bg-clip-text text-transparent">Adventure</span>
+            Aventura <span className="bg-gradient-to-r from-cyber to-electric bg-clip-text text-transparent">Pac-Man</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Experience the classic arcade game! Use WASD or arrow keys to move and collect all the dots
+            ¡Experimenta el clásico juego de arcade! Usa WASD o las flechas del teclado para moverte y recolecta todos los puntos
           </p>
         </div>
 
@@ -244,13 +244,13 @@ const InteractiveGame = () => {
           <div className="flex justify-center items-center space-x-8 mb-8">
             <div className="text-center">
               <div className="text-2xl font-bold text-electric">{score}</div>
-              <div className="text-sm text-muted-foreground">Score</div>
+              <div className="text-sm text-muted-foreground">Puntuación</div>
             </div>
             <div className="text-center">
               <div className="text-2xl font-bold text-cyber">
                 {dots.flat().filter(Boolean).length}
               </div>
-              <div className="text-sm text-muted-foreground">Dots Left</div>
+              <div className="text-sm text-muted-foreground">Puntos Restantes</div>
             </div>
           </div>
 
@@ -282,7 +282,7 @@ const InteractiveGame = () => {
               className="border-electric/50 text-electric hover:bg-electric/10 hover-lift"
             >
               <RotateCcw className="mr-2 h-5 w-5" />
-              Reset
+              Reiniciar
             </Button>
             
             {!gameRunning ? (
@@ -292,7 +292,7 @@ const InteractiveGame = () => {
                 className="bg-gradient-to-r from-cyber to-electric hover:from-cyber/90 hover:to-electric/90 text-white hover-lift"
               >
                 <Play className="mr-2 h-5 w-5" />
-                Start Game
+                Iniciar Juego
               </Button>
             ) : (
               <Button
@@ -301,30 +301,30 @@ const InteractiveGame = () => {
                 className="bg-gradient-to-r from-cyber to-electric hover:from-cyber/90 hover:to-electric/90 text-white hover-lift"
               >
                 <Pause className="mr-2 h-5 w-5" />
-                Pause
+                Pausar
               </Button>
             )}
           </div>
 
           {/* Instructions */}
           <div className="text-center bg-card/50 backdrop-blur-sm rounded-2xl p-6 border border-border">
-            <h3 className="text-lg font-semibold mb-3">How to Play</h3>
+            <h3 className="text-lg font-semibold mb-3">Cómo Jugar</h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm text-muted-foreground">
               <div className="flex items-center space-x-2">
                 <div className="w-6 h-6 bg-electric rounded-full flex items-center justify-center text-white text-xs font-bold">1</div>
-                <span>Use WASD or arrow keys to move</span>
+                <span>Usa WASD o las flechas para moverte</span>
               </div>
               <div className="flex items-center space-x-2">
                 <div className="w-6 h-6 bg-cyber rounded-full flex items-center justify-center text-white text-xs font-bold">2</div>
-                <span>Collect all the dots to win</span>
+                <span>Recolecta todos los puntos para ganar</span>
               </div>
               <div className="flex items-center space-x-2">
                 <div className="w-6 h-6 bg-neon rounded-full flex items-center justify-center text-white text-xs font-bold">3</div>
-                <span>Avoid the colorful ghosts!</span>
+                <span>¡Evita los fantasmas de colores!</span>
               </div>
             </div>
             <div className="mt-4 text-xs text-muted-foreground">
-              Click the game board to focus, then use your keyboard to play
+              Haz clic en el tablero del juego para enfocarlo, luego usa tu teclado para jugar
             </div>
           </div>
         </div>

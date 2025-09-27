@@ -12,11 +12,11 @@ const Footer = () => {
                 <Code2 className="h-6 w-6 text-white" />
               </div>
               <span className="text-xl font-bold bg-gradient-to-r from-electric to-cyber bg-clip-text text-transparent">
-                Vibe Coding
+                Vibe Coding LATAM
               </span>
             </div>
             <p className="text-muted-foreground mb-6 max-w-md">
-              Empowering the next generation of developers with interactive, engaging, and practical coding education.
+              Empoderando la próxima generación de desarrolladores latinoamericanos con educación interactiva, atractiva y práctica.
             </p>
             
             {/* Social Links */}
@@ -54,26 +54,26 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h3 className="font-semibold mb-4">Quick Links</h3>
+            <h3 className="font-semibold mb-4">Enlaces Rápidos</h3>
             <ul className="space-y-2">
               <li>
                 <a href="#courses" className="text-muted-foreground hover:text-electric transition-colors">
-                  Courses
+                  Cursos
                 </a>
               </li>
               <li>
                 <a href="#resources" className="text-muted-foreground hover:text-electric transition-colors">
-                  Resources
+                  Recursos
                 </a>
               </li>
               <li>
                 <a href="#game" className="text-muted-foreground hover:text-electric transition-colors">
-                  Interactive Demo
+                  Demo Interactivo
                 </a>
               </li>
               <li>
                 <a href="#" className="text-muted-foreground hover:text-electric transition-colors">
-                  About Us
+                  Acerca de Nosotros
                 </a>
               </li>
             </ul>
@@ -81,21 +81,21 @@ const Footer = () => {
 
           {/* Support */}
           <div>
-            <h3 className="font-semibold mb-4">Support</h3>
+            <h3 className="font-semibold mb-4">Soporte</h3>
             <ul className="space-y-2">
               <li>
                 <a href="#" className="text-muted-foreground hover:text-electric transition-colors">
-                  Help Center
+                  Centro de Ayuda
                 </a>
               </li>
               <li>
                 <a href="#" className="text-muted-foreground hover:text-electric transition-colors">
-                  Community
+                  Comunidad
                 </a>
               </li>
               <li>
                 <a href="#" className="text-muted-foreground hover:text-electric transition-colors">
-                  Contact Us
+                  Contáctanos
                 </a>
               </li>
               <li>
@@ -110,10 +110,10 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-border mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-muted-foreground text-sm">
-            © 2024 Vibe Coding. All rights reserved.
+            © 2024 Vibe Coding LATAM. Todos los derechos reservados.
           </p>
           <p className="text-muted-foreground text-sm flex items-center mt-4 md:mt-0">
-            Made with <Heart className="h-4 w-4 mx-1 text-red-500" /> for developers
+            Hecho con <Heart className="h-4 w-4 mx-1 text-red-500" /> para desarrolladores latinos
           </p>
         </div>
       </div>

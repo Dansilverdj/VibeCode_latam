@@ -5,8 +5,8 @@ import { Button } from '@/components/ui/button';
 const resources = [
   {
     id: 1,
-    title: "JavaScript Cheat Sheet",
-    description: "Complete reference guide for modern JavaScript syntax and methods",
+    title: "Guía de JavaScript",
+    description: "Guía de referencia completa para sintaxis y métodos modernos de JavaScript",
     type: "PDF",
     icon: FileText,
     color: "electric",
@@ -15,9 +15,9 @@ const resources = [
   },
   {
     id: 2,
-    title: "React Components Library",
-    description: "Reusable React components with TypeScript and Tailwind CSS",
-    type: "Code",
+    title: "Librería de Componentes React",
+    description: "Componentes React reutilizables con TypeScript y Tailwind CSS",
+    type: "Código",
     icon: BookOpen,
     color: "cyber",
     size: "15.6 MB",
@@ -25,19 +25,19 @@ const resources = [
   },
   {
     id: 3,
-    title: "CSS Grid & Flexbox Guide",
-    description: "Visual guide to modern CSS layout techniques with examples",
-    type: "Interactive",
+    title: "Guía de CSS Grid y Flexbox",
+    description: "Guía visual de técnicas modernas de layout CSS con ejemplos",
+    type: "Interactivo",
     icon: ExternalLink,
     color: "neon",
-    size: "Online",
+    size: "En línea",
     downloads: "8.1k"
   },
   {
     id: 4,
-    title: "Python Automation Scripts",
-    description: "Collection of useful Python scripts for everyday automation tasks",
-    type: "Code",
+    title: "Scripts de Automatización Python",
+    description: "Colección de scripts útiles de Python para tareas de automatización diarias",
+    type: "Código",
     icon: FileText,
     color: "tech",
     size: "5.7 MB",
@@ -45,9 +45,9 @@ const resources = [
   },
   {
     id: 5,
-    title: "Web Development Roadmap",
-    description: "Step-by-step learning path from beginner to full-stack developer",
-    type: "Guide",
+    title: "Hoja de Ruta Desarrollo Web",
+    description: "Ruta de aprendizaje paso a paso de principiante a desarrollador full-stack",
+    type: "Guía",
     icon: BookOpen,
     color: "electric",
     size: "1.8 MB",
@@ -55,8 +55,8 @@ const resources = [
   },
   {
     id: 6,
-    title: "Video Tutorials Series",
-    description: "Comprehensive video series covering advanced development topics",
+    title: "Serie de Video Tutoriales",
+    description: "Serie integral de videos cubriendo temas avanzados de desarrollo",
     type: "Video",
     icon: Video,
     color: "cyber",
@@ -72,10 +72,10 @@ const Resources = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Learning <span className="bg-gradient-to-r from-neon to-tech bg-clip-text text-transparent">Resources</span>
+            Recursos de <span className="bg-gradient-to-r from-neon to-tech bg-clip-text text-transparent">Aprendizaje</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Boost your learning with our curated collection of guides, templates, and tools
+            Potencia tu aprendizaje con nuestra colección curada de guías, plantillas y herramientas
           </p>
         </div>
 
@@ -136,7 +136,7 @@ const Resources = () => {
                         resource.color === 'neon' ? 'bg-neon hover:bg-neon/90' : 
                         'bg-tech hover:bg-tech/90'} text-white`}
                   >
-                    {resource.type === 'Interactive' ? 'Open' : 'Download'}
+                    {resource.type === 'Interactivo' ? 'Abrir' : 'Descargar'}
                     <Download className="ml-2 h-4 w-4 group-hover/btn:translate-y-0.5 transition-transform" />
                   </Button>
                 </CardContent>
@@ -147,18 +147,18 @@ const Resources = () => {
 
         {/* Newsletter Signup */}
         <div className="mt-16 text-center bg-secondary/30 rounded-2xl p-8 border border-border">
-          <h3 className="text-2xl font-bold mb-4">Stay Updated</h3>
+          <h3 className="text-2xl font-bold mb-4">Mantente Actualizado</h3>
           <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-            Get notified when we add new resources, templates, and learning materials to our collection
+            Recibe notificaciones cuando agregemos nuevos recursos, plantillas y materiales de aprendizaje
           </p>
           <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
             <input 
               type="email" 
-              placeholder="Enter your email" 
+              placeholder="Ingresa tu correo electrónico" 
               className="flex-1 px-4 py-2 rounded-lg bg-background border border-border focus:ring-2 focus:ring-electric/50 focus:border-electric outline-none"
             />
             <Button className="bg-gradient-to-r from-electric to-cyber hover:from-electric/90 hover:to-cyber/90 text-white px-6">
-              Subscribe
+              Suscribirse
             </Button>
           </div>
         </div>

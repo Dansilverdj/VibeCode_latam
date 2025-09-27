@@ -25,7 +25,7 @@ const Header = () => {
               <Code2 className="h-6 w-6 text-white" />
             </div>
             <span className="text-xl font-bold bg-gradient-to-r from-electric to-cyber bg-clip-text text-transparent">
-              Vibe Coding
+              Vibe Coding LATAM
             </span>
           </div>
 
@@ -35,25 +35,25 @@ const Header = () => {
               onClick={() => scrollToSection('home')}
               className="text-foreground hover:text-electric transition-colors duration-300"
             >
-              Home
+              Inicio
             </button>
             <button
               onClick={() => scrollToSection('courses')}
               className="text-foreground hover:text-electric transition-colors duration-300"
             >
-              Courses
+              Cursos
             </button>
             <button
               onClick={() => scrollToSection('resources')}
               className="text-foreground hover:text-electric transition-colors duration-300"
             >
-              Resources
+              Recursos
             </button>
             <button
               onClick={() => scrollToSection('game')}
               className="text-foreground hover:text-electric transition-colors duration-300"
             >
-              Play
+              Jugar
             </button>
             
             {/* Theme Toggle */}
@@ -85,30 +85,30 @@ const Header = () => {
                 onClick={() => scrollToSection('home')}
                 className="text-left text-foreground hover:text-electric transition-colors duration-300"
               >
-                Home
+                Inicio
               </button>
               <button
                 onClick={() => scrollToSection('courses')}
                 className="text-left text-foreground hover:text-electric transition-colors duration-300"
               >
-                Courses
+                Cursos
               </button>
               <button
                 onClick={() => scrollToSection('resources')}
                 className="text-left text-foreground hover:text-electric transition-colors duration-300"
               >
-                Resources
+                Recursos
               </button>
               <button
                 onClick={() => scrollToSection('game')}
                 className="text-left text-foreground hover:text-electric transition-colors duration-300"
               >
-                Play
+                Jugar
               </button>
               
               {/* Mobile Theme Toggle */}
               <div className="flex items-center justify-between pt-4 border-t border-border">
-                <span className="text-foreground font-medium">Dark Mode</span>
+                <span className="text-foreground font-medium">Modo Oscuro</span>
                 <div className="flex items-center space-x-2">
                   <Sun className="h-4 w-4 text-muted-foreground" />
                   <Switch
